@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Allunaggio - Simulazione</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body class="w3-black">
+    <main>
+      <header class="w3-container w3-black">
+        <h1>Simulazione di Allunaggio</h1>
+        <button class="w3-button w3-red" onclick="logout()">Logout</button>
+      </header>
+
+      <section class="w3-container w3-card w3-dark-grey">
+        <div class="form-row">
+          <label for="massa">Massa (kg):</label>
+          <input type="number" id="massa" />
+        </div>
+        <div class="form-row">
+          <label for="velocita">Velocità iniziale (m/s):</label>
+          <input type="number" id="velocita" />
+        </div>
+        <button
+          id="btn-avvia"
+          class="w3-button w3-green"
+          onclick="avviaSimulazione()"
+        >
+          Avvia Simulazione
+        </button>
+        <p id="tempo">Tempo: --</p>
+      </section>
+
+      <div id="luna" class="w3-container">
+        <img id="navicella" src="../img/razzo.png" alt="🚀" />
+      </div>
+    </main>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

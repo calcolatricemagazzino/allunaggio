@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  background-color: #000;
+  font-family: Arial, sans-serif;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+main {
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+}
+
+header.w3-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #111 !important;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.w3-button.w3-red {
+  border-radius: 12px;
+  padding: 0.6rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+section.w3-card.w3-dark-grey {
+  background-color: #222 !important;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+}
+
+.form-row > label {
+  width: 160px;
+  font-weight: bold;
+  color: #eee;
+  user-select: none;
+}
+
+.form-row > input {
+  flex-grow: 1;
+  padding: 0.5rem 0.8rem;
+  font-size: 1rem;
+  border-radius: 12px;
+  border: 1px solid #555;
+  background-color: #111;
+  color: #eee;
+  outline: none;
+  box-sizing: border-box;
+  margin: 0 !important;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.w3-button.w3-green {
+  width: 100%;
+  padding: 0.8rem 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #4caf50 !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 12px !important;
+  cursor: pointer;
+}
+
+#tempo {
+  color: #ccc;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+#luna {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  margin: 30px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  background: url("../img/allunaggio-bg.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+#navicella {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(-43deg);
+  width: 150px;
+  height: auto;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  pointer-events: none;
+}

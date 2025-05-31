@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  background-color: #000;
+  font-family: Arial, sans-serif;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.w3-card {
+  background-color: #222 !important;
+  border-radius: 12px;
+  padding: 1.5rem 2rem !important;
+  max-width: 400px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: none !important;
+}
+
+h2 {
+  margin: 0 0 1rem;
+  color: #eee;
+  font-weight: normal;
+}
+
+.w3-input {
+  width: 100%;
+  padding: 0.5rem 0.8rem !important;
+  font-size: 1rem;
+  border-radius: 12px !important;
+  border: 1px solid #555 !important;
+  background-color: #111 !important;
+  color: #eee !important;
+  box-sizing: border-box;
+  margin-bottom: 1rem !important;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+button.w3-button {
+  width: 100%;
+  padding: 0.8rem 0 !important;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #4caf50 !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 12px !important;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem !important;
+}
+
+button.w3-button:hover {
+  background-color: #45a049 !important;
+}
+
+a.w3-text-blue {
+  color: #4caf50 !important;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a.w3-text-blue:hover {
+  text-decoration: underline;
+}
+
+.w3-text-light-grey {
+  color: #ccc !important;
+  font-size: 0.95rem;
+}
+
+.error-message {
+  color: #ff5555;
+  margin-top: 0.5rem;
+  min-height: 1.2em;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.error-message.show {
+  opacity: 1;
+}
+
+.password-requirements {
+  font-size: 0.85rem;
+  color: #ccc;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  padding-left: 4px;
+}
+
+@media (max-width: 480px) {
+  .w3-card {
+    padding: 1.2rem 1.5rem !important;
+  }
+  body {
+    padding: 20px 5px;
+  }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login / Registrazione</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="css/login-style.css" />
+  </head>
+  <body class="w3-black">
+    <div
+      class="w3-container w3-card w3-dark-grey w3-padding w3-margin w3-center"
+      style="max-width: 400px; margin: auto"
+    >
+      <section id="login-section" style="display: flex; flex-direction: column">
+        <h2 class="w3-text-white">Login</h2>
+        <input
+          class="w3-input w3-margin-bottom"
+          type="text"
+          id="username"
+          placeholder="Username"
+          autocomplete="username"
+        />
+        <input
+          class="w3-input w3-margin-bottom"
+          type="password"
+          id="password"
+          placeholder="Password"
+          autocomplete="current-password"
+        />
+        <button id="login-btn" class="w3-button w3-white w3-margin-bottom">
+          Accedi
+        </button>
+        <p class="w3-margin-top w3-text-light-grey">
+          Non hai un account?
+          <a href="#" id="show-register" class="w3-text-blue">Registrati</a>
+        </p>
+        <p id="errore-login" class="error-message"></p>
+      </section>
+
+      <section
+        id="register-section"
+        style="display: none; flex-direction: column"
+      >
+        <h2 class="w3-text-white">Registrazione</h2>
+        <input
+          class="w3-input w3-margin-bottom"
+          type="text"
+          id="newUser"
+          placeholder="Username"
+          autocomplete="username"
+        />
+        <input
+          class="w3-input w3-margin-bottom"
+          type="password"
+          id="newPass"
+          placeholder="Password"
+          autocomplete="new-password"
+          aria-describedby="passwordHelp"
+        />
+        <!-- Requisiti password -->
+        <small
+          id="passwordHelp"
+          class="w3-text-light-grey password-requirements"
+        >
+          Minimo 6 caratteri, almeno 1 lettera e 1 numero.
+        </small>
+        <button id="register-btn" class="w3-button w3-white w3-margin-top">
+          Crea Account
+        </button>
+        <p class="w3-margin-top w3-text-light-grey">
+          Hai già un account?
+          <a href="#" id="show-login" class="w3-text-blue">Login</a>
+        </p>
+        <p id="errore-register" class="error-message"></p>
+      </section>
+    </div>
+
+    <script src="js/auth.js"></script>
+  </body>
+</html>
